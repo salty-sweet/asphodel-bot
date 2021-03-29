@@ -1,6 +1,6 @@
 {
     "name": "asphodel-bot",
-    "version": "0.0.1-1",
+    "version": "0.0.1",
     "description": "Marcoroni's very own Discord Moderation bot.",
     "main": "asphodel.js",
     "scripts": {
