@@ -26,29 +26,22 @@
 This Readme will most likely be updated as soon as it needs an update, and more sections and documentation will be made as soon as the planned features are ready.
 
 
-## About this Project
-The <strong>Asphodel</strong> bot is a Discord Bot project designed and created by Marcoroni (salty-sweet). It is mainly a Discord Moderation Bot for servers and it aims to do most of the things over the top.
+## About this Project's Branch
+The <strong>Asphodel</strong> `slash` branch contains a variant of the Discord Bot that is designed to accept and execute Discord's newly added feature, the <strong>Slash Commands.</strong> Overall, nothing's fairly new. It's still the same Discord Moderation Bot for servers to use, and it still aims to do most of the things over the top.
 
-The idea of creating this bot comes from the sudden pressure of trying to make a project to put on his own Github profile, primarily to make it look good.
+The idea of creating this bra
 <br/>
 <br/>
-Asphodel's <i>[soon to be]</i> implemented core features are the following:
-  - [ ] Over-the-top Server Moderation commands
-  - [ ] Userdata Change Logging
-  - [ ] Role Handling through Reactions
-  - [ ] Over-the-top Fun/Entertainment commands
-  - [ ] Bot Logging in a specified channels
-  - [ ] Salty's Pack of Goodies
-  - [ ] Sentience and Consciousness
-
-...and many more to be planned in the future!
-<br/>
-<br/>
-The project relies on the [Discord.JS](https://github.com/discordjs/discord.js/) module for Node.js.
+The project relies on the [Discord.JS](https://github.com/discordjs/discord.js/) module for Node.js.<br/>
+Most of the command handling is done by the [WOKCommands](https://github.com/AlexzanderFlores/WOKCommands) module.
 
 
 ## Changelog & Roadmap
-A proper changelog can be found at <a href="https://github.com/salty-sweet/asphodel-bot/blob/main/CHANGELOG.md">`CHANGELOG.md`</a>. A project roadmap is also planned and will be added in the future.
+I'm fairly sure I still have to properly handle versioning on this project. Things are going to be chaotic, like the disclaimer says:
+> *"...things will come and go."*
+<br/>
+<br/>
+<strong>Assume that every changes made</strong>
 
 ## License
 Distributed under the GNU General Public License v3.0. See <a href="https://github.com/salty-sweet/asphodel-bot/blob/main/LICENSE">`LICENSE`</a> for more information.

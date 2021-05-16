@@ -6,7 +6,11 @@ let { prefix, slashCommands } = require('../../config.json');
 module.exports = {
     name: 'help',
     description: "Shows you all of Asphodel's commands.",
-    execute(client, message, args) {
+    callback: ({ client, message, args }) => {
+        instance.commandHandler.commands.forEach((command) => {
+            console.log(command)
+        })
+
         let response;
 
         if (!slashCommands) {

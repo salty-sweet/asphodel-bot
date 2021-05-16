@@ -1,15 +1,18 @@
 const Discord = require('discord.js');
 
 module.exports = {
-    name: 'ping',
+    category: 'Testing',
+    slash: true,
+    testOnly: true,
     description: 'Table tennis but with numbers.',
-    async execute(client, message, args) {
-        const exampleEmbed = await new Discord.MessageEmbed()
+    callback: ({ client, message }) => {
+        const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#ff0049')
             .setThumbnail()
             .setTitle(`🏓 Pong!`)
-            .setDescription(`WebSocket ping is ${client.ws.ping}MS\nMessage sent ping is ${Date.now() - message.createdAt}MS!`)
-            .setTimestamp();
-        const msg = await message.channel.send(exampleEmbed);
+            .setFooter(`WebSocket ping is ${client.ws.ping}MS!`);
+        // .setTimestamp();
+
+        return exampleEmbed;
     },
 };

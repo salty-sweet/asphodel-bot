@@ -1,7 +1,7 @@
 {
     "prefix": ">>",
     "token": "env$DISC_TOKEN",
-    "isDevelopment": true,
+    "enableVerbose": true,
     "slashCommands": false,
     "channels": {
         "data": "some channel id goes here",
