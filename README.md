@@ -39,9 +39,7 @@ Most of the command handling is done by the [WOKCommands](https://github.com/Ale
 ## Changelog & Roadmap
 I'm fairly sure I still have to properly handle versioning on this project. Things are going to be chaotic, like the disclaimer says:
 > *"...things will come and go."*
-<br/>
-<br/>
-<strong>Assume that every changes made</strong>
+<strong>Assume that every changes made will be for v0.1.0 unless stated otherwise.</strong>
 
 ## License
 Distributed under the GNU General Public License v3.0. See <a href="https://github.com/salty-sweet/asphodel-bot/blob/main/LICENSE">`LICENSE`</a> for more information.
