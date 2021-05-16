@@ -39,6 +39,7 @@ Most of the command handling is done by the [WOKCommands](https://github.com/Ale
 ## Changelog & Roadmap
 I'm fairly sure I still have to properly handle versioning on this project. Things are going to be chaotic, like the disclaimer says:
 > *"...things will come and go."*
+<br/>
 <strong>Assume that every changes made will be for v0.1.0 unless stated otherwise.</strong>
 
 ## License
