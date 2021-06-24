@@ -1,1 +1,1 @@
-worker: node asphodel.js
+worker: node asphodel.js *

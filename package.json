@@ -4,7 +4,9 @@
     "description": "Marcoroni's very own Discord Moderation bot.",
     "main": "asphodel.js",
     "scripts": {
-        "start": "node .",
+        "start": "nodemon . ",
+        "log1": "nodemon . -- ASPHODEL-BOT ASPHODEL-BOT:discord",
+        "log2": "nodemon . -- *",
         "test": "node --trace-warnings ."
     },
     "repository": {
@@ -18,11 +20,13 @@
     },
     "homepage": "https://github.com/salty-sweet/asphodel-bot#readme",
     "dependencies": {
+        "bufferutil": "^4.0.3",
         "chalk": "^4.1.0",
         "debug": "^4.3.1",
+        "discord-reply": "^0.1.2",
         "discord.js": "^12.5.3",
         "dotenv": "^9.0.2",
         "gradient-string": "^1.2.0",
-        "wokcommands": "^1.3.5"
+        "utf-8-validate": "^5.0.5"
     }
 }
