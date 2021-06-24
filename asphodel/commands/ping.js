@@ -8,10 +8,8 @@ module.exports = {
     callback: ({ client, message }) => {
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#ff0049')
-            .setThumbnail()
             .setTitle(`🏓 Pong!`)
             .setFooter(`WebSocket ping is ${client.ws.ping}MS!`);
-        // .setTimestamp();
 
         return exampleEmbed;
     },

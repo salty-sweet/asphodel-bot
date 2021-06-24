@@ -6,28 +6,38 @@ module.exports = {
     testOnly: true,
     description: "Grab someone's profile picture at the highest resolution.",
     minArgs: 1,
-    expectedArgs: '<user> [size]',
-    callback: ({ message, args }) => {
+    expectedArgs: '<user>',
+    callback: async({ message, client, interaction }) => {
 
-        const [user, size] = args;
+        let mention = interaction.data.options[0].value;
 
-        user = user || message.author;
+        if (!mention) return "response";
 
-        console.log(user.avatarURL());
+        if (mention.startsWith('<@') && mention.endsWith('>')) {
+            mention = mention.slice(2, -1);
+
+            if (mention.startsWith('!')) {
+                mention = mention.slice(1);
+            }
+        }
+
+        const user = await client.users.fetch(mention);
+        const size = 4096;
 
         const response = new Discord.MessageEmbed()
-            .setAuthor(user);
+            .setAuthor(await client.users.fetch(interaction.member.user.id));
 
         if (user.displayAvatarURL({ dynamic: true }).endsWith('.gif')) {
             response.setImage(user.avatarURL({ size: size, dynamic: true }))
-                .setDescription(`\`\`\`Image Size: ${size}\nAnimated: true\`\`\``);
+                .setDescription(`\`\`\`Image Size: ${response.image.size}\nAnimated: true\`\`\``);
         } else {
             response.setImage(user.avatarURL({ size: size }))
-                .setDescription(`\`\`\`Image Size: ${size}\nAnimated: false\`\`\``);
+                .setDescription(`\`\`\`Image Size: ${response.image.size}\nAnimated: false\`\`\``);
         }
 
         response.setTimestamp();
 
         return response;
+
     },
 };
