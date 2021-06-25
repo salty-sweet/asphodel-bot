@@ -1,9 +1,6 @@
 const Discord = require('discord.js');
 
 module.exports = {
-    category: 'Utilities',
-    slash: true,
-    testOnly: true,
     description: "Grab someone's profile picture at the highest resolution.",
     minArgs: 1,
     expectedArgs: '<user>',
