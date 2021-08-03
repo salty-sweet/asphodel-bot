@@ -2,12 +2,11 @@
     "name": "asphodel-bot",
     "version": "0.0.2",
     "description": "Marcoroni's very own Discord Moderation bot.",
-    "main": "asphodel.js",
+    "main": "aspho-heroku.js",
     "scripts": {
         "start": "nodemon . ",
         "log1": "nodemon . -- ASPHODEL-BOT ASPHODEL-BOT:discord",
         "log2": "nodemon . -- *",
-        "log3": "nodemon . -- ASPHODEL-BOT:*",
         "test": "node --trace-warnings ."
     },
     "repository": {
@@ -22,13 +21,14 @@
     "homepage": "https://github.com/salty-sweet/asphodel-bot#readme",
     "dependencies": {
         "bufferutil": "^4.0.3",
-        "chalk": "^4.1.0",
-        "debug": "^4.3.1",
+        "debug": "^4.3.2",
         "discord-reply": "^0.1.2",
-        "discord.js": "^12.5.3",
+        "discord.js": "^13.0.0-dev.t1627778678.74fc23b",
         "dotenv": "^9.0.2",
         "gradient-string": "^1.2.0",
+        "listr": "^0.14.3",
         "ora": "^5.4.1",
+        "supports-color": "^9.0.2",
         "utf-8-validate": "^5.0.5"
     }
 }
