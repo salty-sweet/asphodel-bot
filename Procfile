@@ -1,1 +1,1 @@
-worker: node ora-test.js *
+worker: node asphodel.js *
